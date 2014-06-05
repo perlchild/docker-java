@@ -2,6 +2,7 @@ image: openjdk7
 env:
   - GOPATH=/var/cache/drone
 script:
+  - yum install maven
   - mvn clean install
 deploy:
     bash:
